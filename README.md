@@ -1,5 +1,10 @@
 # LongChainKBQA
-
+#### 项目技术
++  ChatYuan-large-v2 大语言模型进行基于知识库的问答 
++  nlp_bert_document-segmentation_chinese-base 语义分割模型对文本进行拆分
++  text2vec-large-chinese 模型 对文本向量化  
++  faiss进行向量检索
++  langchain 进行各个模块的组合，并完成基于知识库的问答
 #### 项目结构
 + config.py：配置文件,配置llm模型和文本向量化模型
 + document.py：文本拆分和文本向量化
