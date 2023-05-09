@@ -1,9 +1,7 @@
-
 from typing import List, Optional
 from langchain.llms.base import LLM
 from langchain.llms.utils import enforce_stop_tokens
 from transformers import AutoModel, AutoTokenizer
-
 from config import Config
 
 
@@ -20,7 +18,7 @@ class LLMService(LLM):
 
     @property
     def _llm_type(self) -> str:
-        return "ChatGLM"
+        return "LLM"
 
     def _call(self,
               prompt: str,
@@ -37,8 +35,11 @@ class LLMService(LLM):
         self.history = self.history + [[None, response]]
         return response
 
-    def load_model(self,
-                   model_name_or_path: str = "ClueAI/ChatYuan-large-v2"):
+    def load_model(self, model_name_or_path: str = "ClueAI/ChatYuan-large-v2"):
+        """
+        加载大模型LLM
+        :return:
+        """
         self.tokenizer = AutoTokenizer.from_pretrained(
             Config.llm_model_name,
             trust_remote_code=True

@@ -37,4 +37,5 @@ class DocumentService(object):
 
 if __name__ == '__main__':
     s = DocumentService()
+    ###将文本分块向量化存储起来
     s.init_source_vector()
