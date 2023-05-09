@@ -11,7 +11,9 @@
 + llm.py：大语言模型加载
 + chainKBQA.py：利用文本向量化搜索和大语言模型进行知识库问答
 
-
+#### 项目使用
++ 运行document.py 主函数对文本进行拆分以及向量化
++ 运行chainKBQA.py 加载文本向量和llm模型进行知识问答
 #### 结果如下：
 > load llm model 
 > load documents
