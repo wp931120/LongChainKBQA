@@ -1,4 +1,4 @@
-# LongChainKBQA
+# LongChainKBQA 
 #### 项目技术
 +  ChatYuan-large-v2 大语言模型进行基于知识库的问答 
 +  nlp_bert_document-segmentation_chinese-base 语义分割模型对文本进行拆分
@@ -40,3 +40,4 @@
 > 	2017年，凭借玄幻剧《三生三世十里桃花》获得白玉兰奖最佳女配角提名 [4] 。2018年，迪丽热巴成为了金鹰电视艺术节的第七位“金鹰女神” [5] ，
 > 	并获得了第29届中国电视金鹰奖观众喜爱的女演员、第12届中国金鹰电视艺术节最具人气女演员两项殊荣 [6] 。', metadata={'source': 'source/txt/dilireba.txt'})]
 > }
+#### TODO
