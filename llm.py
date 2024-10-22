@@ -52,5 +52,6 @@ class LLMService(LLM):
         self.model = self.model.eval()
 
 if __name__ == '__main__':
+    ##加载模型
     chatLLM = LLMService()
     chatLLM.load_model()
