@@ -6,6 +6,10 @@ from config import Config
 
 
 class LLMService(LLM):
+
+    """ 
+    模型服务 
+    """
     max_token: int = 10000
     temperature: float = 0.1
     top_p = 0.9
